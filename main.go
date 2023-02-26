@@ -3,10 +3,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/skip2/go-qrcode"
+	"github.com/tdewolff/canvas"
 	"log"
 	"net/http"
-
-	"github.com/skip2/go-qrcode"
 )
 
 // QRCodeRequest represents the JSON request body for generating a QR code
@@ -38,16 +38,19 @@ func generateQRCodeHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	qr, err := qrcode.Encode(reqBody.Data, qrcode.Medium, 256)
+	qr, err := qrcode.New(reqBody.Data, qrcode.Medium)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		fmt.Fprintf(w, "Error generating QR code: %v", err)
 		return
 	}
 
-	imageURL := "data:image/png;base64," + qr.ToDataURL()
+	canvas := canvas.New(256, 256)
+	qr.Draw(canvas)
 
-	resp := QRCodeResponse{ImageURL: imageURL}
+	dataURL := canvas.ToDataURL("image/png")
+
+	resp := QRCodeResponse{ImageURL: dataURL}
 
 	jsonResp, err := json.Marshal(resp)
 	if err != nil {
