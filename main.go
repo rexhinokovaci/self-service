@@ -1,10 +1,12 @@
-package self_service
+package main
 
 import (
 	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/skip2/go-qrcode"
 )
 
 // QRCodeRequest represents the JSON request body for generating a QR code
