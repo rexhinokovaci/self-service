@@ -1,6 +1,7 @@
 
 body {
     text-align: center;
+    background-color: #f5f5f5;
 }
 
 .box {
@@ -8,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     padding: 30px;
     width: 30%;
     height: 100px;
@@ -41,8 +42,8 @@ body {
 div {
     width: 650px; /* Increase width */
     height: 550px; /* Increase height */
-    background-color: rgb(255, 255, 255);
-    color: white;
+    background-color: #f5f5f5;
+    color: #f5f5f5;
     text-align: center;
     line-height: 150px;
     font-size: 30px; /* Increase font size */
@@ -52,17 +53,17 @@ div {
 
 /* Customize the colors of each div */
 #div1 {
-  
+
     background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
 }
 
 #div2 {
-  
+
     background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
 }
 
 #div3 {
- 
+
     background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
 }
 
@@ -79,4 +80,12 @@ div {
 #div6 {
 
     background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
+}
+.checkout-image {
+    background-image: url('https://th.bing.com/th/id/R.36feed97431bde70808708c24289cda7?rik=iuusVGu3KKVL4Q&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center center;
+
+    width: 20%;
+    height: 100px;
 }
