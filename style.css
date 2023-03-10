@@ -1,91 +1,125 @@
-
-body {
-    text-align: center;
-    background-color: #f5f5f5;
+header {
+	background-color: #cf2e2e;
+	color: white;
+	padding: 20px;
+	text-align: center;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-    padding: 30px;
-    width: 30%;
-    height: 100px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    cursor: pointer;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+.banner {
+	margin-top: 20px;
 }
 
-/* Add some basic styles to the divs */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Add gap between rows */
-    margin-top: 50px; /* Add some margin to top */
-    margin: 0 auto
+.banner img {
+	display: block;
+	margin: 0 auto;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 100px; /* Add gap between columns */
-    text-align: center;
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
 }
 
-div {
-    width: 650px; /* Increase width */
-    height: 550px; /* Increase height */
-    background-color: #f5f5f5;
-    color: #f5f5f5;
-    text-align: center;
-    line-height: 150px;
-    font-size: 30px; /* Increase font size */
-    font-weight: bold;
-    text-align: center;
+.menu-item {
+	border: 1px solid #ccc;
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
 }
 
-/* Customize the colors of each div */
-#div1 {
-
-    background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
+.menu-image {
+	float: left;
+	margin-right: 10px;
 }
 
-#div2 {
-
-    background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
+.menu-image img {
+	max-width: 100%;
 }
 
-#div3 {
-
-    background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
+.menu-details {
+	overflow: hidden;
 }
 
-#div4 {
-
-    background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
+.menu-details h3 {
+	margin-top: 0;
 }
 
-#div5 {
-
-    background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
+.add-to-cart-btn {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px;
 }
 
-#div6 {
-
-    background-image: url('https://th.bing.com/th/id/R.f55d00dd43e885b04e86a1114412df4e?rik=wbkTgBfAnnzlLw&pid=ImgRaw&r=0');
+.add-to-cart-btn:hover {
+	background-color: #3e8e41;
 }
-.checkout-image {
-    background-image: url('https://th.bing.com/th/id/R.36feed97431bde70808708c24289cda7?rik=iuusVGu3KKVL4Q&pid=ImgRaw&r=0');
-    background-size: cover;
-    background-position: center center;
 
-    width: 20%;
-    height: 100px;
+.cart {
+	margin-top: 20px;
+	padding: 10px;
 }
+
+.cart-items {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.cart-item-name {
+	flex-grow: 1;
+}
+
+.cart-item-price {
+	margin-left: 10px;
+}
+
+.total-price {
+	font-weight: bold;
+}
+
+.clear-cart-btn {
+	background-color: #f44336;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.clear-cart-btn:hover {
+	background-color: #da190b;
+}
+
+.place-order-btn {
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.place-order-btn:hover {
+	background-color: #3e8e41;
+}
+
+footer {
+	background-color: #cf2e2e;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* problem with menu and menu-item */
